@@ -1,0 +1,208 @@
+<?php
+
+// Memuat file koneksi.php yang berisi koneksi ke database
+require_once 'Fungctions/koneksi.php';
+
+// Memuat file functions.php yang berisi fungsi-fungsi tambahan
+require_once 'Fungctions/functions.php';
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jerapah - Contact</title>
+    <link rel="icon" href="img/pp.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Memasukkan navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"
+        data-aos="fade-down">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Kisure <span class="text-gradient"
+                    style="background: linear-gradient(to right, #0000FF, #87CEEB); -webkit-background-clip: text; color: transparent;">Cosrent</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="costume.html" class="nav-link">Costume</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-wrap hero-wrap-3 js-fullheight"
+        style="background-image: url('img/Banner.png'); width: 100%; height: 100%;" data-stellar-background-ratio="0.5">
+        <div class="overlay" style="height: 100vh;"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+                <div class="col-md-9 ftco-animate pb-5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END navigasi -->
+
+    <section class="ftco-section contact-section bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Kolom Informasi Kontak -->
+                <div class="col-md-12  mb-4">
+                    <div class="contact-info-box p-4"
+                        style="background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon mr-3" style="font-size: 1.5rem; color: #007bff;">
+                                <span class="icon-map-o"></span>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 0;"><strong>Alamat:</strong> GGM7+V9X, Tarik Kidul, Tarik, Kec.
+                                    Tarik, Kabupaten Sidoarjo, Jawa Timur 61265</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon mr-3" style="font-size: 1.5rem; color: #007bff;">
+                                <span class="icon-mobile-phone"></span>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 0;"><strong>No Telepon:</strong> <a href="tel://083134899434"
+                                        target="_blank"
+                                        onclick="return confirm('Anda akan dial nomor telepon ini. Lanjutkan?');"
+                                        style="color: #007bff;">+6287713490610</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon mr-3" style="font-size: 1.5rem; color: #007bff;">
+                                <span class="icon-envelope-o"></span>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 0;"><strong>Email:</strong> <a
+                                        href="mailto:hakimrent214@gmail.com" target="_blank"
+                                        onclick="return confirm('Anda akan mengirim email ke alamat ini. Lanjutkan?');"
+                                        style="color: #007bff;">hakimrent214@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tombol WhatsApp di Bawah -->
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a href="https://wa.me/6283134899434" target="_blank"
+                        class="btn btn-success d-flex align-items-center"
+                        style="background-color: #25D366; border-color: #25D366; color: #fff; padding: 1rem 2rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-decoration: none;">
+                        <img src="img/whatsapp.png" alt="WhatsApp Logo" class="whatsapp-logo img-fluid"
+                            style="max-width: 24px; margin-right: 10px;">
+                        <span>Chat via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2"><a href="#" class="logo">Kisure<span
+                                    style="color: #95D2F7;">Cosrent</span></a></h2>
+                        <p>Kisure Cosrent adalah sebuah akun Rental Cosplay yang berbasis di Sidoarjo.</p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Informasi Kontak</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">GGM7+V9X, Tarik Kidul,
+                                        Tarik, Kec. Tarik, Kabupaten Sidoarjo, Jawa Timur 61265</span></li>
+                                <li><a href="../contact.php"><span class="icon icon-phone"></span><span
+                                            class="text">+6287713490610</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> eijikizu
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
